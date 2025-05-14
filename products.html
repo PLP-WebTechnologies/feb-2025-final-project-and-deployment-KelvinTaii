@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - Gofu Golf Shop</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Gofu Golf Shop</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html" class="active">Products</a></li>
+        <li><a href="cart.html" class="cart-icon">Cart<span id="cart-count">0</span></a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="products">
+      <h2>Our Products</h2>
+      
+      <div class="category-filters">
+        <button class="filter-btn active" data-category="all">All Products</button>
+        <button class="filter-btn" data-category="clubs">Golf Clubs</button>
+        <button class="filter-btn" data-category="balls">Golf Balls</button>
+        <button class="filter-btn" data-category="accessories">Accessories</button>
+      </div>
+
+      <div class="product-list">
+        <div class="product" data-id="1" data-category="clubs">
+          <img src="https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Golf Club Set">
+          <h3>Premium Golf Club Set</h3>
+          <p class="product-description">Complete set of premium golf clubs for serious players</p>
+          <p class="price">KES 44,999</p>
+          <button onclick="addToCart(1, 'Premium Golf Club Set', 44999)">Add to Cart</button>
+        </div>
+        <div class="product" data-id="2" data-category="balls">
+          <img src="https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Golf Balls">
+          <h3>Pro Golf Balls (Pack of 12)</h3>
+          <p class="product-description">High-performance golf balls for maximum distance</p>
+          <p class="price">KES 2,999</p>
+          <button onclick="addToCart(2, 'Pro Golf Balls', 2999)">Add to Cart</button>
+        </div>
+        <div class="product" data-id="3" data-category="accessories">
+          <img src="https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Golf Glove">
+          <h3>Premium Golf Glove</h3>
+          <p class="product-description">Comfortable and durable golf glove for better grip</p>
+          <p class="price">KES 2,250</p>
+          <button onclick="addToCart(3, 'Premium Golf Glove', 2250)">Add to Cart</button>
+        </div>
+        <div class="product" data-id="4" data-category="accessories">
+          <img src="https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Golf Bag">
+          <h3>Professional Golf Bag</h3>
+          <p class="product-description">Spacious and durable golf bag with multiple pockets</p>
+          <p class="price">KES 13,499</p>
+          <button onclick="addToCart(4, 'Professional Golf Bag', 13499)">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Gofu Golf Shop. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
